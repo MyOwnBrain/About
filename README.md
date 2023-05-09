@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @MyOwnBrain
 - 👀 I’m interested in Music and Coding
-- 🌱 I’m currently learning Python (and JS)
+- 🌱 I currently don't really learn but train Webdev
 - 💞️ I’m looking to collaborate on hm ...
 - 📫 How to reach me
-  - Discord : @MyOwnBrain#4640
+  - Discord : @MOB37#1800
   - Instagram : @piano.niklas
   - TikTok : @myownbrain37
 
