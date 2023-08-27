@@ -1,0 +1,53 @@
+.progs {
+    display: flex;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.progress > h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.progress > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent_text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 0.5rem rgb(var(--dark)));
+}
+
+.progress svg {
+    width: 16rem;
+    height: 16rem;
+    backdrop-filter: blur(1);
+    background: rgb(var(--font-normal), 0.1);
+    border-radius: 2rem;
+    box-shadow: 
+        inset 1rem 0 1rem -1rem rgba(var(--font-bright), 0.25),
+        inset -1rem 0 1rem -1rem rgb(var(--dark));
+}
+
+.progress svg .progress_circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-dasharray: 999;
+    stroke-dashoffset: 999;
+    transition: stroke-dashoffset 1s ease-in-out, stroke-dasharray 1s ease-in-out;
+    filter: drop-shadow(0 0 0.5rem #000003);
+}

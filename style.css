@@ -1,0 +1,232 @@
+:root {
+    font-size: 16px;
+
+    --font-bright: 248, 248, 248;
+    --font-middle: 219, 225, 232;
+    --font-normal: 178, 190, 205;
+    --dark-blue: 15, 14, 24;
+    --dark: 10, 10, 10;
+    --dark-middle: 24, 24, 24;
+    --dark-bright: 38, 38, 38;
+    --red: 255, 0, 55;
+    --orange: 255, 94, 28;
+    --yellow: 255, 187, 0;
+    --green: 74, 210, 149;
+    --blue: 95, 105, 202;
+    --purple: 115, 0, 255;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Cubano;
+    src: url(fonts/Cubano.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    max-width: 100%;
+    background: linear-gradient(rgb(var(--dark)), rgb(var(--dark-blue)));
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: Poppins;
+    cursor: none;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(rgb(var(--dark)), rgb(var(--dark-blue)));
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    border: 0.35rem solid transparent;
+    background-clip: content-box;
+    background-color: rgb(var(--dark-middle));
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--dark-bright));
+}
+
+a {
+    color: rgb(var(--font-middle));
+    text-decoration: none;
+    cursor: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Cubano;
+    font-size: 3.75rem;
+    color: rgb(var(--font-bright));
+    width: max-content;
+}
+
+h2 {
+    font-size: 3.75rem;
+    text-align: center;
+    color: rgb(var(--dark));
+    width: max-content;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    font-family: Cubano;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: rgb(var(--font-bright));
+    background: rgb(var(--dark-blue));
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+p {
+    color: rgb(var(--font-normal));
+    font-size: 1.5rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.cursor {
+    position: fixed;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: rgb(var(--font-bright));
+    box-shadow: 
+        0 0 1rem rgb(var(--font-bright)),
+        0 0 2rem rgb(var(--font-bright)),
+        0 0 4rem rgb(var(--font-bright));
+    filter: blur(0.05rem);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms, all 0.25s, top 0.1ms, left 0.1ms;
+    z-index: 999;
+}
+
+body:hover .cursor {
+    opacity: 1;
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    background: rgb(var(--font-normal), 0.2);
+    border-radius: 0.5rem;
+    z-index: 999;
+    box-shadow: inset 0 0 0.5rem rgb(var(--dark));
+}
+
+.back_to_top img {
+    filter: invert(100%) sepia(1%) saturate(8%) hue-rotate(61deg) brightness(107%) contrast(95%) drop-shadow(0 0 0.5rem rgb(var(--font-bright)));
+}
+
+.red-text {
+    color: rgb(var(--red));
+    font-weight: bold;
+}
+
+.red-bg {
+    background: rgb(var(--red));
+}
+
+.orange-text {
+    color: rgb(var(--orange));
+    font-weight: bold;
+}
+
+.orange-bg {
+    background: rgb(var(--orange));
+}
+
+.yellow-text {
+    color: rgb(var(--yellow));
+    font-weight: bold;
+}
+
+.yellow-bg {
+    background: rgb(var(--yellow));
+}
+
+.green-text {
+    color: rgb(var(--green));
+    font-weight: bold;
+}
+
+.green-bg {
+    background: rgb(var(--green));
+}
+
+.blue-text {
+    color: rgb(var(--blue));
+    font-weight: bold;
+}
+
+.blue-bg {
+    background: rgb(var(--blue));
+}
+
+.purple-text {
+    color: rgb(var(--purple));
+    font-weight: bold;
+}
+
+.purple-bg {
+    background: rgb(var(--purple));
+}
+
+.gradient-text {
+    background-image: linear-gradient(rgb(var(--yellow)), rgb(var(--orange)));
+    color: #0000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.description {
+    font-size: 1.25rem;
+    max-width: 60rem;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s, filter 1s;
+    filter: blur(4rem);
+}
+
+.shown {
+    opacity: 1;
+    filter: blur(0rem);
+}

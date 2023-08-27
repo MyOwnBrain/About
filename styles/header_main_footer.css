@@ -1,0 +1,96 @@
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 96rem;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    scroll-snap-align: center;
+}
+
+header nav {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav a span {
+    color: rgb(var(--font-normal));
+    text-decoration: transparent;
+    transition: 1s;
+}
+
+header nav a:hover {
+    text-decoration: transparent;
+}
+
+header:is(.hidden) nav a span {
+    color: rgb(var(--rainbow-color));
+    text-shadow: 
+        0 0 1rem rgb(var(--rainbow-color)),
+        0 0 2rem rgb(var(--rainbow-color));
+    text-decoration: underline rgb(var(--rainbow-color));
+}
+
+header:is(.shown) nav a span {
+    color: rgb(var(--font-normal));
+    text-shadow: none;
+    text-decoration: transparent;
+}
+
+header:is(.shown) nav a:hover span {
+    color: rgb(var(--rainbow-color));
+    text-shadow: 
+        0 0 1rem rgb(var(--rainbow-color)),
+        0 0 2rem rgb(var(--rainbow-color));
+    text-decoration: underline rgb(var(--rainbow-color));
+}
+
+/* main */
+
+main {
+    padding: 0 2rem;
+}
+
+main > section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    scroll-snap-align: center;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    right: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--font-normal));
+    font-size: 1.5rem;
+    scroll-snap-align: end;
+}
+
+footer .line {
+    height: 0.25rem;
+    width: 10rem;
+    margin: 2rem;
+    background: radial-gradient(circle, rgb(var(--font-normal)), rgb(var(--font-normal), 0.5));
+    border-radius: 1rem;
+}

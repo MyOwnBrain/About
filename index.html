@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/brain.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/header_main_footer.css">
+        <link rel="stylesheet" href="styles/stats.css">
+        <link rel="stylesheet" href="styles/socials.css">
+        <link rel="stylesheet" href="styles/projects.css">
+        <link rel="stylesheet" href="styles/recommondations.css">
+        <link rel="stylesheet" href="styles/mobile.css">
+        <script src="script.js" defer></script>
+        <title>MyOwnBrain</title>
+    </head>
+    <body>
+        <header class="hidden" id="header">
+            <div>
+                <h1>Hi I am <span class="gradient-text">MyOwnBrain</span></h1>
+                <p>I'd like to <span class="red-text">introduce</span> myself & show <span class="green-text">who</span> I am</p>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#stats">Stats</a>
+                <a href="#socials">Socials</a>
+                <a href="#projects">Projects</a>
+                <a href="#recommendations">Recommendations</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hidden" id="about">
+                <h2 class="red-bg">About me</h2>
+                <p class="description">
+                    I'm a 16-year-old from Germany with a passion for <span class="green-text">music</span> that ignited in second grade. Music isn't just a hobby for me - it's a journey of <span class="purple-text">emotions</span> and connections that I explore through playing, understanding music theory, and improvising.<br>
+                    In 2020, I discovered a fascination for <span class="blue-text">IT</span>. Armed with an old Asus Laptop running Windows 10, I stumbled upon coding through a YouTube video on creating Tic Tac Toe using a Batch file. This led me to unravel the possibilities of Windows CMD. I also embarked on a journey in Web Development, tackling <span class="orange-text">HTML</span>, <span class="blue-text">CSS</span> and <span class="yellow-text">JS</span>. Despite initial struggles, I found the right resources at the end of 2020, and things finally clicked. By early 2021, I had upgraded to my current PC, fueling my continuous growth.<br>
+                    <span class="red-text">Gaming</span> is another one of my passions. Currently, I'm diving into titles like Rocket League, Minecraft, Overwatch 2, and Bloons TD 6.
+                </p>
+            </section>
+            <section class="hidden" id="stats">
+                <h2 class="yellow-bg">Stats</h2>
+                <div class="progs">
+                    <div class="progress">
+                        <h4 class="orange-bg">HTML</h4>
+                        <div data-percent="75">
+                            <svg>
+                                <defs>
+                                    <linearGradient id="lin_gradient_html" x1="1" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="rgb(var(--orange))" />
+                                        <stop offset="100%" stop-color="rgba(var(--orange), 0.25)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress_track" cx="50%" cy="50%" r="96" fill="none" stroke="rgb(var(--dark))" stroke-width="1.25rem"/>
+                                <circle class="progress_circle" cx="50%" cy="50%" r="96" fill="none" stroke="url(#lin_gradient_html)" stroke-width="1.25rem" stroke-linecap="round"/>
+                            </svg>
+                            <span class="percent_text orange-text">0%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <h4 class="blue-bg">CSS</h4>
+                        <div data-percent="64">
+                            <svg>
+                                <defs>
+                                    <linearGradient id="lin_gradient_css" x1="1" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="rgb(var(--blue))" />
+                                        <stop offset="100%" stop-color="rgba(var(--blue), 0.25)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress_track" cx="50%" cy="50%" r="96" fill="none" stroke="rgb(var(--dark))" stroke-width="1.25rem"/>
+                                <circle class="progress_circle" cx="50%" cy="50%" r="96" fill="none" stroke="url(#lin_gradient_css)" stroke-width="1.25rem" stroke-linecap="round"/>
+                            </svg>
+                            <span class="percent_text blue-text">0%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <h4 class="yellow-bg">JS</h4>
+                        <div data-percent="50">
+                            <svg>
+                                <defs>
+                                    <linearGradient id="lin_gradient_js" x1="1" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="rgb(var(--yellow))" />
+                                        <stop offset="100%" stop-color="rgba(var(--yellow), 0.5)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress_track" cx="50%" cy="50%" r="96" fill="none" stroke="rgb(var(--dark))" stroke-width="1.25rem"/>
+                                <circle class="progress_circle" cx="50%" cy="50%" r="96" fill="none" stroke="url(#lin_gradient_js)" stroke-width="1.25rem" stroke-linecap="round"/>
+                            </svg>
+                            <span class="percent_text yellow-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="socials">
+                <h2 class="green-bg">Socials</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/piano.niklas/"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@myownbrain37"><img src="images/tiktok.png" alt="tiktok"></a>
+                    <a href="https://www.twitch.tv/myownbrain"><img src="images/twitch.png" alt="twitch"></a>
+                    <a href="https://github.com/MyOwnBrain"><img src="images/github.png" alt="github"></a>
+                    <a href="https://codepen.io/myownbrain/"><img src="images/codepen.png" alt="codepen"></a>
+                </div>
+            </section>
+            <section class="projects hidden" id="projects">
+                <h2 class="blue-bg">Projects</h2>
+                <p>Here are my <span class="red-text">active</span> Projects listed</p>
+                <div class="slider_window">
+                    <div class="slider_control">
+                        <button class="previous_card"><img src="images/left.svg" alt="left"></button>
+                        <button class="next_card"><img src="images/right.svg" alt="right"></button>
+                    </div>
+                    <div class="cardslider" id="cardslider">
+                        <div>
+                            <h3><a href="https://myownbrain.github.io/JG-Worship-Lib/" target="_blank">JG Worship Lib</a></h3>
+                            <p>
+                                ... is a Worship Song Libary with a Player, where you can create a playlist with Youtube Videos. Planned is to add a Song Generator and Lists with Worship Songs.
+                            </p>
+                        </div>
+                        <div>
+                            <h3><a href="https://myownbrain.github.io/Widget-Editor/" target="_blank">Widget Editor</a></h3>
+                            <p>
+                                ... is a Editor where you can create Widgets. It is compatible with OBS to show them in a Stream or Recording. Planned features are show in the GitHub Repository's Readme.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Supermolch Bot</h3>
+                            <p>
+                                ... is a Discord Bot made for Supermolch's Discord Server. I also made a <a href="https://github.com/MyOwnBrain/Supermolch-Docs">Docs page</a> about the Bot.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>...</h3>
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="recommendations">
+                <h2 class="red-bg">I Recommend</h2>
+                <div class="recom-wrapper">
+                    <div>
+                        <div>
+                            <div class="img-el"><img src="images/fireship.svg" alt="Fireship"></div>
+                            <p>
+                                <a href="https://www.youtube.com/@Fireship">Fireship</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="img-el"><img src="images/hyperplexed.svg" alt="Hyperplexed"></div>
+                            <p>
+                                <a href="https://www.youtube.com/@Hyperplexed">Hyperplexed</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="img-el"><img src="images/WebDevSimplified.svg" alt="Web Dev Simplified"></div>
+                            <p>
+                                <a href="https://www.youtube.com/@WebDevSimplified">Web Dev Simplified</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="img-el"><img src="images/OnlineTutorials.jpg" alt="Online Tutorials"></div>
+                            <p>
+                                <a href="https://www.youtube.com/@OnlineTutorialsYT">Online Tutorials</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="img-el"><img src="images/KevinPowell.jpg" alt="Kevin Powell" draggable="false"></div>
+                            <p>
+                                <a href="https://www.youtube.com/@KevinPowell">Kevin Powell</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="line"></div>
+            <div>Website Design inspired by <a href="https://fireship.io/">Fireship.io</a></div>
+            <div>Website only uses plain HTML, CSS and JS</div>
+        </footer>
+        <a href="#header" class="back_to_top"><img src="images/up.svg" alt="back to top"></a>
+        <div class="cursor" id="cursor"></div>
+    </body>
+</html>

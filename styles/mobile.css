@@ -1,0 +1,56 @@
+@media only screen and (max-width: 88rem) {
+    :root {
+        font-size: 12px;
+    }
+
+    body {
+        max-width: 100vw;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        width: auto;
+        text-align: center;
+    }
+
+    main > section {
+        margin: 6rem 0;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .progs {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .progress {
+        flex-direction: row;
+    }
+
+    .progress > h4 {
+        writing-mode: vertical-lr;
+        padding: 1rem 0.25rem;
+        transform: rotate(180deg);
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        margin: 0 4rem;
+        margin-top: 6rem;
+    }
+
+    .slider_window {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 34rem) {
+    .cardslider {
+        padding: 0 8rem;
+    }
+}
