@@ -1,11 +1,4 @@
-- 👋 Hi, I’m @MyOwnBrain
-- 👀 I’m interested in Music and Coding
-- 🌱 I currently don't really learn but train Webdev
-- 💞️ I’m looking to collaborate on hm ...
-- 📫 How to reach me
-  - Discord : @MOB37#1800
-  - Instagram : [@piano.niklas](https://www.instagram.com/piano.niklas/)
-  - TikTok : [@myownbrain37](https://www.tiktok.com/@myownbrain37)
+[Open Page](https://myownbrain.github.io/About/)
 
 <!---
 MyOwnBrain/MyOwnBrain is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
