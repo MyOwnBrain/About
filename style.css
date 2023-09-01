@@ -108,10 +108,21 @@ h3 {
 }
 
 p {
-    color: rgb(var(--font-normal));
     font-size: 1.5rem;
     margin: 4rem auto;
     text-align: center;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+ul.description {
+    margin-top: 4rem;
+}
+
+li ul {
+    list-style-type: "- ";
 }
 
 .cursor {
@@ -218,6 +229,7 @@ body:hover .cursor {
 .description {
     font-size: 1.25rem;
     max-width: 60rem;
+    color: rgb(var(--font-normal));
 }
 
 .hidden {

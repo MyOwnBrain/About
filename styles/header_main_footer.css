@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 header nav {
